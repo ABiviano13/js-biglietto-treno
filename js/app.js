@@ -49,6 +49,7 @@ else if ( age > 65) {
     discoutprice = Math.floor (discoutprice);
     console.log ("Questo è il prezzo per gli over 65 :", discoutprice);
 } else {
+    discout = 0;
     discoutprice = 0;
     console.log ("Mi dispiace, non c'è alcuno sconto per te");
 }
