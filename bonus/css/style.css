@@ -13,6 +13,12 @@ img{
     max-width: 100%;
 }
 
+:root{
+    --blue--: #0d4076;
+    --light-gray--: lightgray;
+    --red--: #cc3229;
+}
+
 .container{
     max-width: 1000px;
     height: 100vh;
@@ -25,20 +31,20 @@ img{
 }
 
 .ticket-train{
-    background-color: lightgray;
+    background-color: var(--light-gray--);
     color: white;
     border-radius: 10px;
     
 }
 
 .header-ticket-train{
-    background-color: #0d4076;
+    background-color: var(--blue--);
     border-radius: 10px;
     padding: 8px;
 }
 
 .main-ticket-train{
-    background-color: lightgray;
+    background-color: var(--light-gray--);
     color: black;
 }
 
@@ -54,15 +60,27 @@ img{
 
 .style-price-ticket{
     padding: 3px 0;
-    color: #0d4076;
+    color: var(--blue--);
 }
 
 .barcode-ticket img{
     width: 150px;
 }
 
+.dati-ticket{
+    color: var(--red--);
+    font-weight: bold;
+}
+
+.icon-e::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f153";
+    font-size: 12px;
+}
+
 .footer-ticket-train{
-    background-color: #cc3229;
+    background-color: var(--red--);
     border-radius: 10px;
     padding: 10px;
     text-align: center;
