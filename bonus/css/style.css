@@ -1,0 +1,70 @@
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+ul,
+ol,
+menu{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ticket-train{
+    background-color: lightgray;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.header-ticket-train{
+    background-color: #0d4076;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.main-ticket-train{
+    background-color: lightgray;
+    color: black;
+}
+
+.ticket-info{
+    display: flex;
+    gap: 10px;
+    line-height: 25px;
+}
+
+.list-info-ticket{
+    flex-basis: calc((100% - 20px) / 4);
+}
+
+.style-price-ticket{
+    padding: 3px 0;
+    color: #0d4076;
+}
+
+.barcode-ticket img{
+    width: 150px;
+}
+
+.footer-ticket-train{
+    background-color: #cc3229;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+}
