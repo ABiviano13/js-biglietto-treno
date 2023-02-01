@@ -1,11 +1,11 @@
 // 0. Definire le variabili nome e cognome e chiederle all'utente
-let firstname = document.getElementById ("firstnameticket");
-firstname = prompt ("Inserisci il tuo nome");
-firstnameticket.innerHTML = firstname;
+let FirstName = document.getElementById ("firstnameticket");
+FirstName = prompt ("Inserisci il tuo nome");
+firstnameticket.innerHTML = FirstName;
 
-let lastname = document.getElementById ("lastnameticket");
-lastname = prompt ("Inserisci il tuo cognome");
-lastnameticket.innerHTML = lastname;
+let LastName = document.getElementById ("lastnameticket");
+LastName = prompt ("Inserisci il tuo cognome");
+lastnameticket.innerHTML = LastName;
 
 
 // 1. Definire le variabili
@@ -26,36 +26,36 @@ console.log ("I kilometri che l'utente ha scelto sono i seguenti:", km);
 kmticket.innerHTML = km;
 
 // 4. Definire il prezzo totale in base ai km
-let pricekm = 0.21;
-let pricetotal = molt = km * pricekm;
-console.log (pricekm, pricetotal);
-priceticket.innerHTML = pricetotal;
+let PriceKm = 0.21;
+let PriceTotal = molt = km * PriceKm;
+console.log (PriceKm, PriceTotal);
+priceticket.innerHTML = PriceTotal;
 
 // 5. Sconto del 20% per i minorenni Sconto del 40% per gli over 65 + calcolo per definire il prezzo totale
-let discout = document.getElementById ("discountticket")
-let discoutprice = document.getElementById("pricediscoutticket")
+let Discout = document.getElementById ("discountticket")
+let DiscoutPrice = document.getElementById("pricediscoutticket")
 
 if ( age < 18) {
-    discout = (pricetotal * 20) / 100;
-    console.log ("Questo è lo sconto per i minorenni :", discout);
-    discoutprice = pricetotal - discout;
-    discoutprice = Math.floor (discoutprice);
-    console.log ("Questo è il prezzo per i minorenni :", discoutprice);
+    Discout = (PriceTotal * 20) / 100;
+    console.log ("Questo è lo sconto per i minorenni :", Discout);
+    DiscoutPrice = PriceTotal - Discout;
+    DiscoutPrice = Math.floor (DiscoutPrice);
+    console.log ("Questo è il prezzo per i minorenni :", DiscoutPrice);
 } 
 else if ( age > 65) {
-    discout = (pricetotal * 40) / 100;
-    console.log ("Questo è lo sconto per gli over 65 :", discout);
-    discoutprice = pricetotal - discout;
-    discoutprice = Math.floor (discoutprice);
-    console.log ("Questo è il prezzo per gli over 65 :", discoutprice);
+    Discout = (PriceTotal * 40) / 100;
+    console.log ("Questo è lo sconto per gli over 65 :", Discout);
+    DiscoutPrice = PriceTotal - Discout;
+    DiscoutPrice = Math.floor (DiscoutPrice);
+    console.log ("Questo è il prezzo per gli over 65 :", DiscoutPrice);
 } else {
-    discout = 0;
-    discoutprice = 0;
+    Discout = 0;
+    DiscoutPrice = 0;
     console.log ("Mi dispiace, non c'è alcuno sconto per te");
 }
 
-discountticket.innerHTML = discout;
-pricediscoutticket.innerHTML = discoutprice;
+discountticket.innerHTML = Discout;
+pricediscoutticket.innerHTML = DiscoutPrice;
 
 
 
